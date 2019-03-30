@@ -1,0 +1,30 @@
+#A script to make the gun follow the player 's input 
+using UnityEngine;
+using System.Collections;
+
+public class GunMovement : MonoBehaviour {
+	Rigidbody Gun;
+	public float fireRate;
+	Vector3 Movement;
+	public float speed;
+	Quaternion r;
+
+	// Use this for initialization
+	void Start () {
+		Gun = GetComponent<Rigidbody> ();
+		fireRate = 0.1f;
+
+
+	}
+	
+	// Update is called once per frame
+	void Update () {
+		float moveHorizontal = Input.GetAxisRaw ("Horizontal");
+		float moveVertical = Input.GetAxisRaw ("Vertical");
+		Movement.Set (moveHorizontal, 0f, moveVertical);
+		Movement = Movement.normalized * speed;
+		Gun.MovePosition (Movement + transform.position);
+
+
+	}
+}
