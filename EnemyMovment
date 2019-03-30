@@ -1,0 +1,31 @@
+# A script to make the enemy move towards the player using Navigation . 
+using UnityEngine;
+using System.Collections;
+
+public class EnemyMovement1 : MonoBehaviour
+{
+    Transform player;
+   
+    UnityEngine.AI.NavMeshAgent nav;
+	PlayerController playerAlive;
+	Animator anim;
+	Rigidbody Enemy;
+	bool x=true;
+
+    void Start()
+    {
+        player = GameObject.FindGameObjectWithTag ("Player").transform;
+		anim = GetComponent<Animator> ();
+		Enemy = GetComponent<Rigidbody> ();
+    nav = GetComponent <UnityEngine.AI.NavMeshAgent> ();
+		playerAlive = GetComponent<PlayerController> ();
+
+    }
+
+    void FixedUpdate ()
+    {
+		
+		nav.SetDestination(transform.position);
+
+    }
+}
