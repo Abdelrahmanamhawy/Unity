@@ -8,6 +8,8 @@ A Ryhym based game :
 
 
 An FPS Game where you fight transparent aliens :
+![FpsConsole](https://user-images.githubusercontent.com/31036403/84306079-4ec30a00-ab5b-11ea-830f-2d37fe565a15.PNG)
+![HallowMan](https://user-images.githubusercontent.com/31036403/84306100-5682ae80-ab5b-11ea-8ade-419dc19ae497.PNG)
 ![fpssss](https://user-images.githubusercontent.com/31036403/83958158-c993d880-a86e-11ea-922d-8185bd6f3cc8.PNG)
 
 A trivial game where you trap a ball through cutting the square in the background :(I don't have a name for it )
